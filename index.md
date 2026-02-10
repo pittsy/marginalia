@@ -1,15 +1,20 @@
 ---
 layout: default
-title: Home
+title: Marginalia
 ---
 
-<h1>Latest Posts</h1>
+<h1>{{ page.title }}</h1>
 
-<ul>
+<ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <h2>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>

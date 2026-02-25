@@ -1,0 +1,12 @@
+title: "MARGINALIA"
+description: "Notes in the Margin"
+url: "https://pittsy.github.io"
+baseurl: ""  # keep empty for user sites
+
+markdown: kramdown
+theme: null
+
+permalink: /:year/:month/:day/:title/
+
+# No plugins needed for GitHub Pages basic functionality
+plugins: []

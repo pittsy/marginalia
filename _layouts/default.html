@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!-- MARGINALIA - oghamgeospatial.ie -->
+<html>
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <nav class="links">
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{{ '/' | relative_url }}">Posts</a></li>
+          </ul>
+        </nav>
+        <nav class="main">
+          <ul>
+            <li class="search">
+              <a class="fa-search" href="#search">Search</a>
+              <form id="search" method="get" action="#">
+                <input type="text" name="query" placeholder="Search" />
+              </form>
+            </li>
+            <li class="menu">
+              <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Sidebar -->
+      <section id="sidebar">
+        <!-- Intro -->
+        <section id="intro">
+          <a href="#" class="logo"><img src="{{ '/images/logo.jpg' | relative_url }}" alt="" /></a>
+          <header>
+            <h2>{{ site.title }}</h2>
+            <p>{{ site.description }}</p>
+            <p>from Barry Pitts of <a href="https://oghamgeospatial.ie">Ogham GeoSpatial</a></p>
+          </header>
+        </section>
+
+        <!-- (Mini Posts + Posts List left as-is from your file) -->
+        {% comment %}
+        Leaving your sidebar content here untouched.
+        {% endcomment %}
+        {{ content }}
+
+        <!-- Footer -->
+        <section id="footer">
+          <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          </ul>
+          <p class="copyright">
+            © Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+            Images: <a href="http://unsplash.com">Unsplash</a>.
+          </p>
+        </section>
+      </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

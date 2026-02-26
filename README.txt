@@ -4,6 +4,9 @@
 
 The test site is built using github pages and a template from HTML5 UP. It may also start using Jekyl for updates... we'll see
 
+https://pittsy.github.io/marginalia/
+
+
 Future Imperfect by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)

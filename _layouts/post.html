@@ -13,17 +13,19 @@ layout: default
         <time class="published" datetime="{{ page.date | date_to_xmlschema }}">
           {{ page.date | date: "%B %-d, %Y" }}
         </time>
-        <a href="#" class="author"><span class="name">Barry Pitts</span>
-          <img src="{{ '/images/avatar.jpg' | relative_url }}" alt="" />
-        </a>
+        <a class="author"><span class="name">Barry Pitts</span><img src="{{ "/images/avatar.jpg" | relative_url }}" alt="" /></a>
       </div>
     </header>
 
-    <span class="image featured">
-      <img src="{{ '/images/pic01.jpg' | relative_url }}" alt="" />
-    </span>
+    {% if page.image %}
+      <span class="image featured">
+        <img src="{{ page.image | relative_url }}" alt="" />
+      </span>
+    {% endif %}
 
-    {{ content }}
+    <section>
+      {{ content }}
+    </section>
 
   </article>
 
